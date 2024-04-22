@@ -4,4 +4,4 @@ npm run dev
 
 React App Project
 
-1. 18.04 - basics, components etc
+1. 18.04 - basics, components
