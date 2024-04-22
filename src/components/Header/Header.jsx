@@ -1,15 +1,10 @@
-const LinkItem = ({ className, href, label }) => {
-
-    return (
-        <a className={className} href={href}>{label}</a>
-    )
-};
+import Input from '../Input/Input';
 
 const Form = ({ className, placeholder }) => {
 
     return (
         <form className={className}>
-            <input placeholder={placeholder} />
+            <Input placeholder={placeholder} />
         </form>
     );
 };
@@ -18,7 +13,7 @@ const Header = ({ className }) => {
 
     return (
         <header className={className}>
-            <LinkItem className="logo" href="/" label="Pizza Day" />
+            <a className="logo" href="/">Pizza Day</a>
             <Form placeholder="Search for the order #" />
         </header>
     );
