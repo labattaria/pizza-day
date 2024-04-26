@@ -1,6 +1,11 @@
-const Button = ({ label }) => {
+const Button = ({ className, label, onClick }) => {
+
+    // const onAddToCartClick = () => {
+    //     console.log('Successfully added!')
+    // }
+
     return (
-        <button>{label}</button>
+        <button className={className} onClick={onClick}>{label}</button>
     );
 };
 
