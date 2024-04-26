@@ -29,7 +29,9 @@ body {
   line-height: 1;
 }
 
+/* margin-top: 40px */
 ol, ul {
+  margin-top: 40px;
   list-style: none;
 }
 
