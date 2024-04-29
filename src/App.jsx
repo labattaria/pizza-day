@@ -7,9 +7,6 @@ import Menu from './components/Menu/Menu'
 
 function App() {
 
-  // ### func onAddToCartClick passes throught App -> Menu -> MenuList -> MenuItem -> Button component
-  const onAddToCartClick = () => console.log('Successfully added!');
-
   return (
     <div className="wrapper">
       <Header className="header" />
@@ -19,7 +16,7 @@ function App() {
         <LoginForm className="login-form" />
       </main>
 
-      <Menu onClick={onAddToCartClick} />
+      <Menu />
     </div>
   );
 }
