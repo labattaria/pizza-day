@@ -1,9 +1,9 @@
 import MenuList from './MenuList';
 
-const Menu = ({ onClick }) => {
+const Menu = () => {
 
     return (
-        <MenuList onClick={onClick} />
+        <MenuList />
     );
 };
 

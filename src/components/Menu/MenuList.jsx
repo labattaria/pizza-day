@@ -1,11 +1,11 @@
 import { pizzas } from './menu/data';
 import MenuItem from './MenuItem'
 
-const MenuList = ({ onClick }) => {
+const MenuList = () => {
 
     return (
         <ul>
-            {pizzas.map((pizza, index) => <MenuItem pizza={pizza} onClick={onClick} key={index} />)}
+            {pizzas.map((pizza, index) => <MenuItem pizza={pizza} key={index} />)}
         </ul>
     );
 };
