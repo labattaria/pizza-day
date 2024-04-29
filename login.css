@@ -11,10 +11,12 @@ body {
   color: rgb(234 179 8);
 }
 
+/* added 4px left-right margin */
 button {
   font-family: Roboto Mono, monospace;
   border: 0;
   padding: 10px 15px;
+  margin: 0px 4px;
   background-color: rgb(234, 179, 8);
   font-size: 16px;
   border-radius: 4px;

@@ -32,3 +32,10 @@
 .pizza__price {
   font-size: 14px;
 }
+
+/* menu counter styles */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
