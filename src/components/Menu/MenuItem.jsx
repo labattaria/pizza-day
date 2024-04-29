@@ -1,7 +1,7 @@
-import './menu/menu.css'
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
+import MenuButton from '../Button/MenuButton';
 
-const MenuItem = ({ pizza, onClick }) => {
+const MenuItem = ({ pizza }) => {
     const { id, name, unitPrice, imageUrl, ingredients, soldOut } = pizza;
 
     return (
@@ -12,7 +12,7 @@ const MenuItem = ({ pizza, onClick }) => {
                 <p className="pizza__ingredients">{ingredients.join(', ')}</p>
                 <div className="pizza__actions">
                     {!soldOut ? <p className="pizza__price">€{unitPrice}</p> : <p className="pizza__price">Sold out</p>}
-                    {!soldOut && <Button className="button" label="Add to cart" onClick={onClick} />}
+                    {!soldOut && <MenuButton className="button" />}
                 </div>
             </div>
         </li>
