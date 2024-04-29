@@ -5,11 +5,11 @@ import Button from '../Button/Button';
 const Counter = () => {
     const [count, setCount] = useState(0);
 
-    const increment = () => {
+    const handleIncrementClick = () => {
         setCount(prevCount => prevCount + 1);
     }
 
-    const decrement = () => {
+    const handleDecrementClick = () => {
         if (count === 0) {
             alert("You cannot order 0 or less pizzas 😄");
             return;
@@ -20,9 +20,9 @@ const Counter = () => {
 
     return (
         <div className="counter">
-            <Button className="button" label="-" onClick={decrement} />
+            <Button className="button" label="-" onClick={handleDecrementClick} />
             <p>{count}</p>
-            <Button className="button" label="+" onClick={increment} />
+            <Button className="button" label="+" onClick={handleIncrementClick} />
         </div>
     );
 };
