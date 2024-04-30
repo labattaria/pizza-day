@@ -2,7 +2,7 @@ import './menu/menu.css'
 import { useState } from 'react';
 import Button from '../Button/Button';
 
-const Counter = () => {
+const MenuOrderCounter = ({ className }) => {
     const [count, setCount] = useState(0);
 
     const handleIncrementClick = () => {
@@ -20,11 +20,11 @@ const Counter = () => {
 
     return (
         <div className="counter">
-            <Button className="button" label="-" onClick={handleDecrementClick} />
+            <Button className={className} label="-" onClick={handleDecrementClick} />
             <p>{count}</p>
-            <Button className="button" label="+" onClick={handleIncrementClick} />
+            <Button className={className} label="+" onClick={handleIncrementClick} />
         </div>
     );
 };
 
-export default Counter;
+export default MenuOrderCounter;
