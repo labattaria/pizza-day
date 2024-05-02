@@ -1,7 +1,7 @@
-import { pizzas } from './menu/data';
+// import { pizzas } from './menu/data';
 import MenuItem from './MenuItem'
 
-const MenuList = () => {
+const MenuList = ({ pizzas }) => {
 
     return (
         <ul>
