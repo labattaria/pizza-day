@@ -33,13 +33,11 @@ input:focus {
   outline: 1px solid rgb(234, 179, 8);
 }
 
-/* flex-direction: column, min-height: 300 instead of 100 */
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
-  min-height: 300vh;
+  min-height: 100vh;
 }
 
 .logo {
@@ -79,4 +77,39 @@ input:focus {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+/* menu__list styles */
+.menu__list {
+  margin-top: 100px;
+}
+
+/* nav styles */
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header__nav .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__nav .link {
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__nav .link:hover,
+.header__nav .link:focus {
+  background-color: #ea9008;
+}
+
+/* NavLink active class styles */
+.active {
+  background-color: #eaa208;
 }
