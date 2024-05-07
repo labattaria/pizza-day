@@ -1,11 +1,15 @@
 import Input from '../Input/Input';
 import Button from '../Button/Button';
+import { useNavigate } from "react-router-dom";
 
 const LoginForm = ({ className }) => {
+    const navigate = useNavigate();
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-    }
+
+        navigate("/menu");
+    };
 
     return (
         <form className={className} onSubmit={handleFormSubmit}>
