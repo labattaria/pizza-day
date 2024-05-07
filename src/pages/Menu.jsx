@@ -11,7 +11,7 @@ const Menu = () => {
                 const response = await fetch('https://react-fast-pizza-api.onrender.com/api/menu');
 
                 if (!response.ok) {
-                    throw new Error('failed to fetch data, the request was rejected')
+                    throw new Error('failed to fetch data, the request was rejected.')
                 }
 
                 const data = await response.json();
