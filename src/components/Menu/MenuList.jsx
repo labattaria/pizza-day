@@ -4,7 +4,7 @@ import MenuItem from './MenuItem'
 const MenuList = ({ pizzas }) => {
 
     return (
-        <ul>
+        <ul className="menu__list">
             {pizzas.map((pizza, index) => <MenuItem pizza={pizza} key={index} />)}
         </ul>
     );
