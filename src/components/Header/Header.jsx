@@ -1,16 +1,10 @@
 import Input from '../Input/Input';
 import { NavLink } from 'react-router-dom';
-
-const Form = ({ className, placeholder }) => {
-
-    return (
-        <form className={className}>
-            <Input placeholder={placeholder} />
-        </form>
-    );
-};
+import { useContext } from 'react';
+import { LoginContext } from '../../context/LoginContext';
 
 const Header = ({ className }) => {
+    const { username } = useContext(LoginContext);
 
     return (
         <header className={className}>
@@ -27,7 +21,9 @@ const Header = ({ className }) => {
                 </ul>
             </nav>
 
-            <Form placeholder="Search for the order #" />
+            <form>
+                <Input placeholder={username ? username : "Search for the order #"} />
+            </form>
         </header>
     );
 };

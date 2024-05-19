@@ -1,8 +1,12 @@
 import MenuList from '../components/Menu/MenuList';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from "react-router-dom";
+import { LoginContext } from '../context/LoginContext';
 
 const Menu = () => {
     const [pizzas, setPizzas] = useState([]);
+    const navigate = useNavigate();
+    const { username } = useContext(LoginContext);
 
     useEffect(() => {
 
@@ -24,7 +28,11 @@ const Menu = () => {
 
         fetchAllPizzas();
 
-    }, []);
+        if (!username) {
+            navigate("/");
+        }
+
+    }, [navigate, username]);
 
     return (
         <MenuList pizzas={pizzas} />
