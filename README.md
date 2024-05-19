@@ -8,4 +8,6 @@ React App Project
 2. 25.04 - Rendering lists, Conditional rendering
 3. 28.04 - Hooks. useState
 4. 02.05 - Hooks. useEffect
-5. 05.05 - React Router
+5. 05.05 - React Router, private routes
+6. 09.05 - React context, useContext hook
+7. 12.05 - Optimization. memo, useCallback, useMemo
