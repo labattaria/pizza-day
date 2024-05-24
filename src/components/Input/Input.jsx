@@ -1,7 +1,7 @@
-const Input = ({ type, placeholder, value, onChange }) => {
+const Input = ({ className, type, placeholder, value, onChange, onBlur }) => {
 
     return (
-        <input type={type} placeholder={placeholder} value={value} onChange={onChange} />
+        <input className={className} type={type} placeholder={placeholder} value={value} onChange={onChange} onBlur={onBlur} />
     );
 };
 
