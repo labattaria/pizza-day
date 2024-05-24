@@ -1,4 +1,4 @@
-import { useState, createContext, useCallback } from 'react';
+import { useState, createContext, useCallback, useMemo } from 'react';
 
 export const LoginContext = createContext(null);
 LoginContext.displayName = "LoginContext";
@@ -8,13 +8,15 @@ const LoginContextProvider = ({ children }) => {
 
     const cachedUsernameChange = useCallback((user) => setUsername(user.trim()), []);
 
-    const value = {
-        username: username,
-        onChange: cachedUsernameChange
-    };
+    const memoValue = useMemo(() => (
+        {
+            username: username,
+            onChange: cachedUsernameChange
+        }
+    ), [cachedUsernameChange, username]);
 
     return (
-        <LoginContext.Provider value={value}>
+        <LoginContext.Provider value={memoValue}>
             {children}
         </LoginContext.Provider>
     );
