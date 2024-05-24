@@ -10,4 +10,5 @@ React App Project
 4. 02.05 - Hooks. useEffect
 5. 05.05 - React Router, private routes
 6. 09.05 - React context, useContext hook
-7. 12.05 - Optimization. memo, useCallback, useMemo
+7. 12.05 - Optimization. memo, useCallback, useMemo, custom hook
+8. 16.05 - React forms. React Hook Form, Yup form validation
