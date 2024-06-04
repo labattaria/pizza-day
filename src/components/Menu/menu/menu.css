@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 500px;
 }
 
 .pizza__price {
@@ -38,4 +39,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.counter__items {
+  display: flex;
+  align-items: center;
+}
+
+.counter__button {
+  margin-left: 10px;
+  margin-right: 10px;
 }

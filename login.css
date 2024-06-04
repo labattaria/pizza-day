@@ -6,7 +6,6 @@ body {
   color: rgb(68, 64, 60);
 }
 
-
 .text-yellow {
   color: rgb(234 179 8);
 }
@@ -19,7 +18,7 @@ button {
   margin: 0px 4px;
   background-color: rgb(234, 179, 8);
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: .75rem;
   cursor: pointer;
 }
 
@@ -58,6 +57,22 @@ input:focus {
   padding: 15px 20px ;
 }
 
+.username__input {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  border-radius: .375rem;
+}
+
+.username__input--header {
+  background-color: #FEF08A;
+}
+
+.header__username {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
 .content {
   text-align: center;
 }
@@ -82,6 +97,7 @@ input:focus {
 /* menu__list styles */
 .menu__list {
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 /* nav styles */
@@ -152,6 +168,14 @@ input:focus {
 
 .form-submit {
     margin-right: auto;
+    padding: 16px 24px;
+    line-height: 1.25rem;
+    border-radius: .75rem;
+
+    font-weight: 600;
+    font-size: .875rem;
+    text-transform: uppercase;
+    background-color: #EAB308;
 }
 
 .error-notification {
@@ -159,4 +183,214 @@ input:focus {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+}
+
+/* footer sticky cart styles */
+
+.sticky__footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+
+  background-color: #292524;
+}
+
+.footer__items {
+  display: flex;
+  align-items: center;
+}
+
+.footer__item {
+  color: #D6D3D1;
+  text-transform: uppercase;
+}
+
+.footer__item--price {
+  margin: 0px 0px 0px 24px;
+}
+
+.footer__item--link {
+  text-decoration: none;
+}
+
+/* cart page styles */
+
+.cart {
+  width: 768px;
+  padding: 12px 16px;
+}
+
+.menu__link {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #2563EB;
+  text-decoration: none;
+}
+
+.cart__title {
+  margin-top: 28px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.cart__list {
+  margin-top: 12px;
+}
+
+.cart__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.cart__navigation {
+  margin-top: 24px;
+}
+
+.order__link {
+  padding: 16px 24px;
+  line-height: 1.25rem;
+  border-radius: .75rem;
+
+  font-weight: 600;
+  font-size: .875rem;
+  text-transform: uppercase;
+  background-color: #EAB308;
+  text-decoration: none;
+}
+
+.cart__empty {
+  margin-top: 16px;
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #44403C;
+}
+
+/* user order page styles */
+
+.order {
+  width: 768px;
+  padding: 24px 16px;
+}
+
+.order__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.order__title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: #44403C;
+}
+
+.order__tracking {
+  padding: 4px 12px;
+  border-radius: .5rem;
+
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  color: #F0FDF4;
+}
+
+.order__tracking--status {
+  margin-left: 8px;
+    background-color: #22C55E;
+}
+
+.order__tracking--priority {
+  background-color: #EF4444;
+}
+
+.delivery__title {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.delivery__time {
+  font-size: .75rem;
+  line-height: 1rem;
+  color: #78716C;
+}
+
+.order__delivery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+  
+  margin-top: 32px;
+  padding: 6px 10px;
+  border-radius: .5rem;
+  
+  background-color: #E7E5E4;
+}
+
+.order__list {
+  margin-top: 32px;
+}
+
+.product__price {
+  font-weight: 700;
+}
+
+.order__product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .5rem;
+
+  padding: 6px 10px;
+  border-radius: .5rem;
+
+  background-color: #E7E5E4;
+}
+
+.order__product:not(:first-child) {
+  margin-top: 10px;
+}
+
+.order__price {
+  margin-top: 32px;
+  padding: 20px 24px;
+  border-radius: .5rem;
+
+  background-color: #E7E5E4;
+}
+
+.price__pizza {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #57534E;
+}
+
+.price__priority {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  color: #57534E;
+}
+
+.price__pizza--delivery {
+  font-weight: 700;
+  margin-top: 8px;
 }
