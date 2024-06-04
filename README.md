@@ -12,3 +12,7 @@ React App Project
 6. 09.05 - React context, useContext hook
 7. 12.05 - Optimization. memo, useCallback, useMemo, custom hook
 8. 16.05 - React forms. React Hook Form, Yup form validation
+9. 22.05 - React Hook Form Controller component, useReducer, old redux
+10. 25.05 - Redux Toolkit (store, reducers, actions)
+11. 29.05 - Redux Toolkit createAsyncThunk
+12. 01.06 - React CSS-in-JS, module styles. Lazy, Suspense. useRef, forwardRef. React portals
