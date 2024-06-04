@@ -19,7 +19,7 @@ const LoginForm = ({ className }) => {
 
     return (
         <form className={className} onSubmit={handleFormSubmit}>
-            <Input type="text" placeholder="Your full name" value={user} onChange={e => setUser(e.target.value)} />
+            <Input type="text" placeholder="Your full name" className="username__input" value={user} onChange={e => setUser(e.target.value)} />
             <Button type="submit" label="Login" />
         </form>
     );

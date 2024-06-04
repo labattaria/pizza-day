@@ -22,7 +22,7 @@ const Header = ({ className }) => {
             </nav>
 
             <form>
-                <Input placeholder={username ? username : "Search for the order #"} />
+                {username ? <div className='header__username'>{username}</div> : <Input placeholder="Search for the order #" className="username__input username__input--header" />}
             </form>
         </header>
     );
