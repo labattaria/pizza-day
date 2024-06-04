@@ -1,30 +1,42 @@
 import './menu/menu.css'
 import Button from '../Button/Button';
-// import MenuOrderCounter from '../Menu/MenuOrderCounter'
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addToCart, decrement, deleteFromCart, increment } from '../../redux/slices/cartSlice';
 
 const MenuItem = ({ pizza }) => {
     const { id, name, unitPrice, imageUrl, ingredients, soldOut } = pizza;
 
     const [isToggled, setIsToggled] = useState(false);
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(1);
+    const dispatch = useDispatch();
 
-    const handleButtonDescrChange = () => {
+    const handleAddToCart = useCallback(() => {
         setIsToggled(!isToggled);
-    };
+        dispatch(addToCart(pizza));
 
-    const handleIncrementClick = () => {
+    }, [dispatch, isToggled, pizza]);
+
+    const handleDeleteFromCart = useCallback(() => {
+        setIsToggled(!isToggled);
+        dispatch(deleteFromCart(pizza.id));
+    }, [dispatch, isToggled, pizza.id]);
+
+    const handleIncrementQuantity = useCallback(() => {
         setCount(prevCount => prevCount + 1);
-    }
+        dispatch(increment(pizza.id));
+    }, [dispatch, pizza.id]);
 
-    const handleDecrementClick = () => {
-        if (count === 0) {
-            alert("You cannot order 0 or less pizzas 😄");
+    const handleDecrementQuantity = useCallback(() => {
+        if (count <= 1) {
+            dispatch(deleteFromCart(pizza.id));
+            setIsToggled(!isToggled);
             return;
         }
 
         setCount(prevCount => prevCount - 1);
-    }
+        dispatch(decrement(pizza.id));
+    }, [count, dispatch, isToggled, pizza.id]);
 
     return (
         <li className="pizza" key={id}>
@@ -36,11 +48,15 @@ const MenuItem = ({ pizza }) => {
                     {!soldOut ? <p className="pizza__price">€{unitPrice}</p> : <p className="pizza__price">Sold out</p>}
                     {isToggled &&
                         <div className="counter">
-                            <Button className="className" label="-" onClick={handleDecrementClick} />
-                            <p>{count}</p>
-                            <Button className="className" label="+" onClick={handleIncrementClick} />
+                            <div className="counter__items">
+                                <Button className="counter__button" label="-" onClick={handleDecrementQuantity} />
+                                <p>{count}</p>
+                                <Button className="counter__button" label="+" onClick={handleIncrementQuantity} />
+                            </div>
+
+                            <Button className="button" onClick={handleDeleteFromCart} label="Delete" />
                         </div>}
-                    {!soldOut && <Button className="button" onClick={handleButtonDescrChange} label={isToggled ? "Delete" : "Add to cart"} />}
+                    {!soldOut && !isToggled && <Button className="button" onClick={handleAddToCart} label="Add to cart" />}
                 </div>
             </div>
         </li>
