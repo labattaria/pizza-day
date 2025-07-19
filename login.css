@@ -77,7 +77,7 @@ input:focus {
   text-align: center;
 }
 
-.title {
+/* .title {
   font-size: 30px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -92,7 +92,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
+} */
 
 /* menu__list styles */
 .menu__list {
