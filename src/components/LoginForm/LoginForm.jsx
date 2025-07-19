@@ -3,6 +3,7 @@ import Button from '../Button/Button';
 import { useNavigate } from "react-router-dom";
 import { useState, memo, useContext } from 'react';
 import { LoginContext } from '../../context/LoginContext';
+import { username__input } from '../LoginForm/loginForm.module.scss';
 
 const LoginForm = ({ className }) => {
     const [user, setUser] = useState('');
@@ -19,7 +20,7 @@ const LoginForm = ({ className }) => {
 
     return (
         <form className={className} onSubmit={handleFormSubmit}>
-            <Input type="text" placeholder="Your full name" className="username__input" value={user} onChange={e => setUser(e.target.value)} />
+            <Input type="text" placeholder="Your full name" className={username__input} value={user} onChange={e => setUser(e.target.value)} />
             <Button type="submit" label="Login" />
         </form>
     );
