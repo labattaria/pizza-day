@@ -6,9 +6,9 @@ body {
   color: rgb(68, 64, 60);
 }
 
-.text-yellow {
+/* .text-yellow {
   color: rgb(234 179 8);
-}
+} */
 
 /* added 4px left-right margin */
 button {
@@ -39,11 +39,11 @@ input:focus {
   min-height: 100vh;
 }
 
-.logo {
+/* .logo {
   text-decoration: none;
   font-size: 20px;
   color: rgb(68, 64, 60);
-}
+} */
 
 .header {
   position: fixed;
@@ -95,10 +95,10 @@ input:focus {
 } */
 
 /* menu__list styles */
-.menu__list {
+/* .menu__list {
   margin-top: 100px;
   margin-bottom: 50px;
-}
+} */
 
 /* nav styles */
 /* .header__nav {
