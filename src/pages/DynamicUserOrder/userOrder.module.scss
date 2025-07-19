@@ -29,7 +29,7 @@ $primary-bg-color: #E7E5E4;
         padding: 20px 24px;
         border-radius: .5rem;
         
-        background-color: #E7E5E4;
+        background-color: $primary-bg-color;
     }
 }
 
@@ -65,7 +65,7 @@ $primary-bg-color: #E7E5E4;
     padding: 6px 10px;
     border-radius: .5rem;
     
-    background-color: #E7E5E4;
+    background-color: $primary-bg-color;
 
     &__title {
         font-size: .875rem;
@@ -90,7 +90,7 @@ $primary-bg-color: #E7E5E4;
     padding: 6px 10px;
     border-radius: .5rem;
     
-    background-color: #E7E5E4;
+    background-color: $primary-bg-color;
 
     &:not(:first-child) {
         margin-top: 10px;
