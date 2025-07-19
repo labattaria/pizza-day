@@ -47,7 +47,7 @@ const MenuItem = ({ pizza }) => {
                 <p className={pizza__name}>{name}</p>
                 <p className={pizza__ingredients}>{ingredients.join(', ')}</p>
                 <div className={pizza__actions}>
-                    {!soldOut ? <p className={pizza__price}>€{unitPrice}</p> : <p className="pizza__price">Sold out</p>}
+                    {!soldOut ? <p className={pizza__price}>€{unitPrice}</p> : <p className={pizza__price}>Sold out</p>}
                     {isToggled &&
                         <div className={counter}>
                             <div className={counter__items}>
