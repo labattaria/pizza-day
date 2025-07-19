@@ -2,7 +2,7 @@ import Input from '../Input/Input';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { LoginContext } from '../../context/LoginContext';
-import { header__username, username__input, input__header, logo, navigation, navigation__ayaya, navigation__item, navigation__link } from '../Header/header.module.scss';
+import { header__username, username__input, input__header, logo, navigation, navigation__item, navigation__link } from '../Header/header.module.scss';
 
 const Header = ({ className }) => {
     const { username } = useContext(LoginContext);
@@ -14,10 +14,10 @@ const Header = ({ className }) => {
             <nav>
                 <ul className={navigation}>
                     <li className={navigation__item}>
-                        <NavLink to='/' className={navigation__ayaya}>Login</NavLink>
+                        <NavLink to='/' className={navigation__link}>Login</NavLink>
                     </li>
                     <li className={navigation__item}>
-                        <NavLink to='/menu' className={navigation__ayaya}>Menu</NavLink>
+                        <NavLink to='/menu' className={navigation__link}>Menu</NavLink>
                     </li>
                 </ul>
             </nav>
