@@ -57,7 +57,7 @@ input:focus {
   padding: 15px 20px ;
 }
 
-.username__input {
+/* .username__input {
   font-size: .875rem;
   line-height: 1.25rem;
   border-radius: .375rem;
@@ -71,7 +71,7 @@ input:focus {
   font-size: .875rem;
   line-height: 1.25rem;
   font-weight: 600;
-}
+} */
 
 .content {
   text-align: center;
@@ -101,7 +101,7 @@ input:focus {
 }
 
 /* nav styles */
-.header__nav {
+/* .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,7 +123,7 @@ input:focus {
 .header__nav .link:hover,
 .header__nav .link:focus {
   background-color: #ea9008;
-}
+} */
 
 /* NavLink active class styles */
 .active {

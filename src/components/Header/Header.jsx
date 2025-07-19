@@ -2,27 +2,28 @@ import Input from '../Input/Input';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
 import { LoginContext } from '../../context/LoginContext';
+import { header__username, username__input, input__header, logo, navigation, navigation__ayaya, navigation__item, navigation__link } from '../Header/header.module.scss';
 
 const Header = ({ className }) => {
     const { username } = useContext(LoginContext);
 
     return (
         <header className={className}>
-            <a className="logo" href="/">Pizza Day</a>
+            <a className={logo} href="/">Pizza Day</a>
 
             <nav>
-                <ul className="header__nav">
-                    <li className="item">
-                        <NavLink to='/' className="link">Login</NavLink>
+                <ul className={navigation}>
+                    <li className={navigation__item}>
+                        <NavLink to='/' className={navigation__ayaya}>Login</NavLink>
                     </li>
-                    <li className="item">
-                        <NavLink to='/menu' className="link">Menu</NavLink>
+                    <li className={navigation__item}>
+                        <NavLink to='/menu' className={navigation__ayaya}>Menu</NavLink>
                     </li>
                 </ul>
             </nav>
 
             <form>
-                {username ? <div className='header__username'>{username}</div> : <Input placeholder="Search for the order #" className="username__input username__input--header" />}
+                {username ? <div className={header__username}>{username}</div> : <Input placeholder="Search for the order #" className={`${username__input} ${input__header}`} />}
             </form>
         </header>
     );
