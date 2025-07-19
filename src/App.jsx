@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Login from './pages/Login/Login';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
-import Order from './pages/Order';
+import Order from './pages/Order/Order';
 import DinamicUserOrder from './pages/DinamicUserOrder';
 import PageNotFound from './pages/PageNotFound';
 

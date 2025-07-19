@@ -132,7 +132,7 @@ input:focus {
 
 /* form styles */
 
-.form {
+/* .form {
   display: flex;
   flex-direction: column;
   max-width: 620px;
@@ -183,7 +183,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
-}
+} */
 
 /* footer sticky cart styles */
 
