@@ -1,8 +1,10 @@
-import './menu/menu.css'
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 import { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addToCart, decrement, deleteFromCart, increment } from '../../redux/slices/cartSlice';
+import { addToCart, decrement, deleteFromCart, increment } from '../../../redux/slices/cartSlice';
+import styles from '../MenuItem/menuItem.module.scss';
+
+const { pizza: pizzaItem, pizza__image, pizza__info, pizza__name, pizza__ingredients, pizza__actions, pizza__price, counter, counter__items, counter__button, button } = styles;
 
 const MenuItem = ({ pizza }) => {
     const { id, name, unitPrice, imageUrl, ingredients, soldOut } = pizza;
@@ -39,24 +41,24 @@ const MenuItem = ({ pizza }) => {
     }, [count, dispatch, isToggled, pizza.id]);
 
     return (
-        <li className="pizza" key={id}>
-            <img src={imageUrl} className="pizza__image" />
-            <div className="pizza__info">
-                <p className="pizza__name">{name}</p>
-                <p className="pizza__ingredients">{ingredients.join(', ')}</p>
-                <div className="pizza__actions">
-                    {!soldOut ? <p className="pizza__price">€{unitPrice}</p> : <p className="pizza__price">Sold out</p>}
+        <li className={pizzaItem} key={id}>
+            <img src={imageUrl} className={pizza__image} />
+            <div className={pizza__info}>
+                <p className={pizza__name}>{name}</p>
+                <p className={pizza__ingredients}>{ingredients.join(', ')}</p>
+                <div className={pizza__actions}>
+                    {!soldOut ? <p className={pizza__price}>€{unitPrice}</p> : <p className="pizza__price">Sold out</p>}
                     {isToggled &&
-                        <div className="counter">
-                            <div className="counter__items">
-                                <Button className="counter__button" label="-" onClick={handleDecrementQuantity} />
+                        <div className={counter}>
+                            <div className={counter__items}>
+                                <Button className={counter__button} label="-" onClick={handleDecrementQuantity} />
                                 <p>{count}</p>
-                                <Button className="counter__button" label="+" onClick={handleIncrementQuantity} />
+                                <Button className={counter__button} label="+" onClick={handleIncrementQuantity} />
                             </div>
 
-                            <Button className="button" onClick={handleDeleteFromCart} label="Delete" />
+                            <Button className={button} onClick={handleDeleteFromCart} label="Delete" />
                         </div>}
-                    {!soldOut && !isToggled && <Button className="button" onClick={handleAddToCart} label="Add to cart" />}
+                    {!soldOut && !isToggled && <Button className={button} onClick={handleAddToCart} label="Add to cart" />}
                 </div>
             </div>
         </li>

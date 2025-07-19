@@ -1,5 +1,5 @@
 // import { pizzas } from './menu/data';
-import MenuItem from './MenuItem'
+import MenuItem from './MenuItem/MenuItem'
 
 const MenuList = ({ pizzas }) => {
 
