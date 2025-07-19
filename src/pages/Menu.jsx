@@ -1,4 +1,4 @@
-import MenuList from '../components/Menu/MenuList';
+import MenuList from '../components/Menu/MenuList/MenuList';
 import StickyFooter from '../components/Cart/Cart';
 import { useEffect, useContext } from 'react';
 import { useNavigate } from "react-router-dom";
