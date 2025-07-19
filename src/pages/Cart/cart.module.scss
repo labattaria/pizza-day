@@ -56,3 +56,19 @@ $primary-bg-color: #EAB308;
     background-color: $primary-bg-color;
     text-decoration: none;
 }
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.counter__items {
+    display: flex;
+    align-items: center;
+}
+
+.counter__button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
