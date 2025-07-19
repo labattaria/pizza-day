@@ -5,7 +5,7 @@ import Login from './pages/Login/Login';
 import Menu from './pages/Menu';
 import Cart from './pages/Cart';
 import Order from './pages/Order/Order';
-import DinamicUserOrder from './pages/DinamicUserOrder';
+import DinamicUserOrder from './pages/DynamicUserOrder/DynamicUserOrder';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {

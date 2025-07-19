@@ -278,7 +278,7 @@ input:focus {
 
 /* user order page styles */
 
-.order {
+/* .order {
   width: 768px;
   padding: 24px 16px;
 }
@@ -289,9 +289,9 @@ input:focus {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: .5rem;
-}
+} */
 
-.order__title {
+/* .order__title {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -308,18 +308,18 @@ input:focus {
   text-transform: uppercase;
 
   color: #F0FDF4;
-}
+} */
 
-.order__tracking--status {
+/* .order__tracking--status {
   margin-left: 8px;
     background-color: #22C55E;
 }
 
 .order__tracking--priority {
   background-color: #EF4444;
-}
+} */
 
-.delivery__title {
+/* .delivery__title {
   font-size: .875rem;
   line-height: 1.25rem;
   font-weight: 600;
@@ -343,17 +343,17 @@ input:focus {
   border-radius: .5rem;
   
   background-color: #E7E5E4;
-}
+} */
 
-.order__list {
+/* .order__list {
   margin-top: 32px;
-}
+} */
 
-.product__price {
+/* .product__price {
   font-weight: 700;
-}
+} */
 
-.order__product {
+/* .order__product {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -364,21 +364,21 @@ input:focus {
   border-radius: .5rem;
 
   background-color: #E7E5E4;
-}
+} */
 
-.order__product:not(:first-child) {
+/* .order__product:not(:first-child) {
   margin-top: 10px;
-}
+} */
 
-.order__price {
+/* .order__price {
   margin-top: 32px;
   padding: 20px 24px;
   border-radius: .5rem;
 
   background-color: #E7E5E4;
-}
+} */
 
-.price__pizza {
+/* .price__pizza {
   font-size: .875rem;
   line-height: 1.25rem;
   color: #57534E;
@@ -393,4 +393,4 @@ input:focus {
 .price__pizza--delivery {
   font-weight: 700;
   margin-top: 8px;
-}
+} */
