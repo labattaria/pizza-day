@@ -220,7 +220,7 @@ input:focus {
 
 /* cart page styles */
 
-.cart {
+/* .cart {
   width: 768px;
   padding: 12px 16px;
 }
@@ -252,9 +252,9 @@ input:focus {
 
 .cart__navigation {
   margin-top: 24px;
-}
+} */
 
-.order__link {
+/* .order__link {
   padding: 16px 24px;
   line-height: 1.25rem;
   border-radius: .75rem;
@@ -264,9 +264,9 @@ input:focus {
   text-transform: uppercase;
   background-color: #EAB308;
   text-decoration: none;
-}
+} */
 
-.cart__empty {
+/* .cart__empty {
   margin-top: 16px;
   text-align: center;
 
@@ -274,7 +274,7 @@ input:focus {
   font-size: 1.25rem;
   line-height: 1.75rem;
   color: #44403C;
-}
+} */
 
 /* user order page styles */
 

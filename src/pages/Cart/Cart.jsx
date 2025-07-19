@@ -1,10 +1,13 @@
-import Button from "../components/Button/Button";
-import StickyFooter from '../components/Cart/Cart';
+import Button from "../../components/Button/Button";
+import StickyFooter from '../../components/Cart/Cart';
 import { useCallback, useContext } from "react";
-import { LoginContext } from "../context/LoginContext";
+import { LoginContext } from "../../context/LoginContext";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { decrement, deleteFromCart, increment } from "../redux/slices/cartSlice";
+import { decrement, deleteFromCart, increment } from "../../redux/slices/cartSlice";
+import styles from '../Cart/cart.module.scss';
+
+const { cart, cart__title, cart__list, cart__product, cart__navigation, cart__empty, menu__link, order__link } = styles;
 
 const Cart = () => {
     const { username } = useContext(LoginContext);
@@ -29,16 +32,16 @@ const Cart = () => {
     }, [dispatch]);
 
     return (
-        <div className="cart">
-            <Link to="/menu" className="menu__link">← Back to menu</Link>
+        <div className={cart}>
+            <Link to="/menu" className={menu__link}>← Back to menu</Link>
 
             {cartItems.length ?
                 <div>
-                    <h2 className="cart__title">Your cart, {username}</h2>
-                    <ul className="cart__list">
+                    <h2 className={cart__title}>Your cart, {username}</h2>
+                    <ul className={cart__list}>
                         {!!cartItems.length && cartItems.map(item => {
                             return (
-                                <li className="cart__product" key={item.id}>
+                                <li className={cart__product} key={item.id}>
                                     <p>{item.quantity}× {item.name}</p>
                                     <div className="counter">
                                         <p>€{item.unitPrice * item.quantity}</p>
@@ -55,11 +58,11 @@ const Cart = () => {
                         })}
                     </ul>
 
-                    <div className="cart__navigation">
-                        <Link to="/order/new" className="order__link">Order pizzas</Link>
+                    <div className={cart__navigation}>
+                        <Link to="/order/new" className={order__link}>Order pizzas</Link>
                     </div>
                 </div>
-                : <p className="cart__empty">Your cart is still empty. Start adding some pizzas :)</p>}
+                : <p className={cart__empty}>Your cart is still empty. Start adding some pizzas :)</p>}
 
             {!!cartItems.length && <StickyFooter />}
         </div>

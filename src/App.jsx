@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Login from './pages/Login/Login';
 import Menu from './pages/Menu';
-import Cart from './pages/Cart';
+import Cart from './pages/Cart/Cart';
 import Order from './pages/Order/Order';
 import DinamicUserOrder from './pages/DynamicUserOrder/DynamicUserOrder';
 import PageNotFound from './pages/PageNotFound';
