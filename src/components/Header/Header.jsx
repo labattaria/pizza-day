@@ -9,12 +9,12 @@ const Header = ({ className }) => {
 
     return (
         <header className={className}>
-            <a className={logo} href="/pizza-day/">Pizza Day</a>
+            <a className={logo} href="/">Pizza Day</a>
 
             <nav>
                 <ul className={navigation}>
                     <li className={navigation__item}>
-                        <NavLink to='/pizza-day' className={navigation__link}>Login</NavLink>
+                        <NavLink to='/' className={navigation__link}>Login</NavLink>
                     </li>
                     <li className={navigation__item}>
                         <NavLink to='/menu' className={navigation__link}>Menu</NavLink>

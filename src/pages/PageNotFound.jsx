@@ -5,7 +5,7 @@ const PageNotFound = () => {
         <div>
             <h1>Oops!</h1>
             <p>Sorry, an unexpected error has occurred.</p>
-            <Link to="/pizza-day">Login page</Link>
+            <Link to="/">Login page</Link>
         </div>
     );
 };
