@@ -4,7 +4,7 @@
 
 ---
 
-[![Pizza Day](https://i.gyazo.com/7730057de70718294c5ba768d1ed5506.gif)](https://i.gyazo.com/7730057de70718294c5ba768d1ed5506.gif)
+[![Pizza Day](https://player.vimeo.com/video/1102894321?h=b64c7d86b1)](https://player.vimeo.com/video/1102894321?h=b64c7d86b1)
 
 ---
 
