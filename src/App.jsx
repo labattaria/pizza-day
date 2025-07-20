@@ -14,7 +14,7 @@ function App() {
       <Header className="header" />
 
       <Routes>
-        <Route path='/' element={<Login />} />
+        <Route path='/pizza-day' element={<Login />} />
         <Route path='/menu' element={<Menu />} />
         <Route path='/cart' element={<Cart />} />
         <Route path='/order/new' element={<Order />} />
