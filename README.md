@@ -4,9 +4,7 @@
 
 ---
 
-[![Pizza Day](https://streamable.com/xyzzwc?src=player-page-share)](https://streamable.com/xyzzwc)
-
-[Pizza Day](https://streamable.com/xyzzwc)
+[![Pizza Day](https://i.gyazo.com/7730057de70718294c5ba768d1ed5506.gif)](https://gyazo.com/7730057de70718294c5ba768d1ed5506)
 
 ---
 
