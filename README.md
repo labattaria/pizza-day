@@ -6,6 +6,8 @@
 
 [![Pizza Day](https://streamable.com/xyzzwc?src=player-page-share)](https://streamable.com/xyzzwc)
 
+[Pizza Day](https://streamable.com/xyzzwc)
+
 ---
 
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](#)
