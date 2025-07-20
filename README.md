@@ -4,7 +4,7 @@
 
 ---
 
-[![Pizza Day](https://gyazo.com/7730057de70718294c5ba768d1ed5506)](https://gyazo.com/7730057de70718294c5ba768d1ed5506)
+[![Pizza Day](https://i.gyazo.com/7730057de70718294c5ba768d1ed5506.gif)](https://i.gyazo.com/7730057de70718294c5ba768d1ed5506.gif)
 
 ---
 
