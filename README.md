@@ -58,6 +58,8 @@ The full list of dependencies can be found in the **package.json** file.
 - **Redux Toolkit createAsyncThunk** - Utility for handling asynchronous logic and side effects in Redux
 - **useRef** - Stores a mutable reference to a DOM element or a value without causing re-renders
 - **forwardRef** - Forwards a ref through a component to access a child’s DOM node or instance
+- **React.lazy** - Dynamically loads components only when they are needed
+- **Suspense** - Displays a fallback (like a loader) while lazy-loaded components are being fetched
 
 ---
 
