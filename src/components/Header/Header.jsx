@@ -9,7 +9,7 @@ const Header = ({ className }) => {
 
     return (
         <header className={className}>
-            <a className={logo} href="/pizza-day">Pizza Day</a>
+            <a className={logo} href="/pizza-day/">Pizza Day</a>
 
             <nav>
                 <ul className={navigation}>
