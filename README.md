@@ -16,7 +16,7 @@
 [![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)](#)
 [![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)](#)
 
-This is Pizza Day react app
+This is the Pizza Day React app
 
 This basic application demonstrates a pizza delivery service example, where users can select multiple types of pizzas and specify the desired quantity for each
 
