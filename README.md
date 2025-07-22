@@ -39,7 +39,7 @@ The full list of dependencies can be found in the **package.json** file.
 
 ---
 
-## Used React features:
+## React Features Used:
 
 - **Components** - Building blocks of React applications, reusable and encapsulated UI pieces
 - **useState, useEffect** - Core hooks for managing state and component lifecycle
